@@ -1,0 +1,85 @@
+name: almohagerlms
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.3+9
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # UI Packages
+  permission_handler: ^11.3.1
+  path_provider: ^2.1.4
+
+  # State Management
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
+
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Localization
+  # TODO: IOS
+  easy_localization: ^3.0.7
+
+  # Other Packages
+  flutter_inappwebview: ^6.1.5
+  url_launcher: ^6.3.1
+
+  cupertino_icons: ^1.0.8
+  # device_info_plus: ^9.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.13
+  hive_generator: ^2.0.1
+  flutter_native_splash: ^2.4.1
+  flutter_launcher_icons: ^0.14.1
+
+# dart run flutter_native_splash:create
+flutter_native_splash:
+  image: assets/images/4.0x/app_logo.png
+  color: "#000000"
+  color_dark: "#000000"
+  image_dark: assets/images/4.0x/app_logo.png
+  android: true
+  ios: true
+  fullscreen: true
+
+
+
+# dart run flutter_launcher_icons:main
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/images/ic_launcher.png"
+  remove_alpha_ios: true
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/1.0x/
+    - assets/images/svg/
+    - assets/translation/
+    - assets/images/app_logo.png
+
+
+  fonts:
+    - family: vazir
+      fonts:
+        - asset: assets/fonts/vazir/Vazir-Bold.ttf
+        - asset: assets/fonts/vazir/Vazir-Medium.ttf
+        - asset: assets/fonts/vazir/Vazir-Regular.ttf
